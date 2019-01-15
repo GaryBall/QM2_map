@@ -256,11 +256,9 @@ $.get('USA.json', function(usaJson) {
               '            <span style="float:right;margin-right:18px">' + params.data.tipData[1] + 'unknown</span>' +
               '        </div>' +
               '    </div>' +
-              '    <div id="tooltipBarId" style="height:200px;width:100%;border-radius:0 0 5px 0;background:#fff"></div>' +
+              '    <img src=\"image/'+ params.name + '.png\" style="height:200px;width:100%;border-radius:0 0 5px 0;background:#fff">' +
+
               '</div>';
-            setTimeout(function() {
-              tooltipCharts(params.name);
-            }, 10);
             return tipHtml;
           }
         },
@@ -311,9 +309,7 @@ $.get('USA.json', function(usaJson) {
         },
 
       },
-      options: [
-        {
-        geo3D: {
+      options: [{geo3D: {
           map: 'USA',
           roam: true,
           itemStyle: {
@@ -356,361 +352,259 @@ $.get('USA.json', function(usaJson) {
               intensity: 0.3
             }
           },
-          regions: [
+          regions:[
 
             {
-              name: 'Alabama',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Mississippi',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Alaska',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Delaware',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Arizona',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Indiana',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Arkansas',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Alabama',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'California',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Alaska',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Colorado',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Arizona',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Connecticut',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Arkansas',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Delaware',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'California',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Florida',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Connecticut',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Georgia',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Florida',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Hawaii',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Georgia',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Idaho',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Idaho',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Illinois',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Illinois',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Indiana',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Iowa',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Iowa',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Kansas',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Kansas',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Kentucky',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Kentucky',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Louisiana',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Louisiana',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Maine',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Maine',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Massachusetts',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Maryland',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Michigan',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Massachusetts',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Minnesota',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Michigan',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Missouri',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Minnesota',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Nebraska',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Mississippi',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Nevada',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Missouri',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New York',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Montana',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'North Carolina',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Nebraska',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'North Dakota',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Nevada',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Ohio',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'NewHampshire',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Oklahoma',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'NewJersey',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Pennsylvania',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'NewMexico',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'RhodeIsland',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'NewYork',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'South Carolina',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'NorthCarolina',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'South Dakota',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'NorthDakota',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Tennessee',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Ohio',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Texas',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Oklahoma',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Utah',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Oregon',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Vermont',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Pennsylvania',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Virginia',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'RhodeIsland',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Washington',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'SouthCarolina',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'West Virginia',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'SouthDakota',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Wisconsin',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Tennessee',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Wyoming',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Texas',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Colorado',
+              itemStyle: {areaColor: '#ECF5FF' }
             },
 
             {
-              name: 'Utah',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Hawaii',
+              itemStyle: {areaColor: '#ECF5FF' }
             },
 
             {
-              name: 'Vermont',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Maryland',
+              itemStyle: {areaColor: '#ECF5FF' }
             },
 
             {
-              name: 'Virginia',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Montana',
+              itemStyle: {areaColor: '#ECF5FF' }
             },
 
             {
-              name: 'Washington',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New Hampshire',
+              itemStyle: {areaColor: '#ECF5FF' }
             },
 
             {
-              name: 'WestVirginia',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New Jersey',
+              itemStyle: {areaColor: '#ECF5FF' }
             },
 
             {
-              name: 'Wisconsin',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New Mexico',
+              itemStyle: {areaColor: '#ECF5FF' }
             },
 
             {
-              name: 'Wyoming',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Oregon',
+              itemStyle: {areaColor: '#ECF5FF' }
             },
 
-          ]
-        },
-        series: [
+          ]},series: [
 
           {
             name: 'bar3D',
@@ -724,8 +618,7 @@ $.get('USA.json', function(usaJson) {
               show: false,
               formatter: '{b}'
             },
-            data: convertData([
-              {
+            data: convertData([{
               name: "Alabama",
               value: 211.59
 
@@ -975,11 +868,7 @@ $.get('USA.json', function(usaJson) {
                 value: 197.22
 
               },
-            ])
-          },
-        ]
-      }, {
-        geo3D: {
+            ])},]},{geo3D: {
           map: 'USA',
           roam: true,
           itemStyle: {
@@ -1022,354 +911,259 @@ $.get('USA.json', function(usaJson) {
               intensity: 0.3
             }
           },
-          regions: [
+          regions:[
 
             {
-              name: 'Alabama',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Mississippi',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Alaska',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Alabama',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Arizona',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Delaware',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Arkansas',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Florida',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'California',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Indiana',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Colorado',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Kentucky',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Connecticut',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Michigan',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Delaware',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'North Carolina',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Florida',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Pennsylvania',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Georgia',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'West Virginia',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Hawaii',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Arizona',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Idaho',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Arkansas',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Illinois',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'California',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Indiana',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Connecticut',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Iowa',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Georgia',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Kansas',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Illinois',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Kentucky',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Iowa',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Louisiana',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Maine',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Maine',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Maryland',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Maryland',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Massachusetts',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Massachusetts',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Minnesota',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Michigan',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Missouri',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Minnesota',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Nebraska',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Missouri',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Nevada',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Montana',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New Hampshire',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Nebraska',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New York',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Nevada',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'North Dakota',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'NewHampshire',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Ohio',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'NewJersey',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Oklahoma',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'NewMexico',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Oregon',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'NewYork',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'RhodeIsland',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'NorthCarolina',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'South Carolina',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'NorthDakota',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'South Dakota',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Ohio',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Tennessee',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Oklahoma',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Texas',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Oregon',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Utah',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Pennsylvania',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Vermont',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'RhodeIsland',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Virginia',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'SouthCarolina',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Washington',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'SouthDakota',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Wisconsin',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Tennessee',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Wyoming',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Texas',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Alaska',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Utah',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Hawaii',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Vermont',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Idaho',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Virginia',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Kansas',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Washington',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Louisiana',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'WestVirginia',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Montana',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Wisconsin',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New Jersey',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
             {
-              name: 'Wyoming',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New Mexico',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
-          ]
-        },
-        series: [
+            {
+              name:'Colorado',
+              itemStyle: {areaColor: '#ECF5FF' }
+            },
+
+          ]},series: [
 
           {
             name: 'bar3D',
@@ -1385,7 +1179,7 @@ $.get('USA.json', function(usaJson) {
             },
             data: convertData([{
               name: "Alabama",
-              value: 476.94,
+              value: 476.94
 
             },
               {
@@ -1633,11 +1427,7 @@ $.get('USA.json', function(usaJson) {
                 value: 491.11
 
               },
-            ])
-          },
-        ]
-      }, {
-        geo3D: {
+            ])},]},{geo3D: {
           map: 'USA',
           roam: true,
           itemStyle: {
@@ -1680,354 +1470,259 @@ $.get('USA.json', function(usaJson) {
               intensity: 0.3
             }
           },
-          regions: [
+          regions:[
 
             {
-              name: 'Alabama',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Mississippi',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Alaska',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Arkansas',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Arkansas',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Indiana',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Delaware',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Michigan',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Illinois',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Missouri',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Indiana',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'South Carolina',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Iowa',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Tennessee',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Kentucky',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'West Virginia',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Louisiana',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Alabama',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Michigan',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'California',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Mississippi',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Delaware',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Missouri',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Florida',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Nebraska',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Idaho',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'NorthCarolina',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Illinois',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'NorthDakota',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Iowa',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Ohio',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Kansas',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Pennsylvania',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Kentucky',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'SouthCarolina',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Louisiana',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Tennessee',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Maine',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Texas',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Maryland',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'WestVirginia',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Minnesota',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Wisconsin',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Nebraska',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Arizona',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Nevada',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'California',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New Jersey',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Colorado',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New York',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Connecticut',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'North Carolina',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Florida',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'North Dakota',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Georgia',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Ohio',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Hawaii',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Oregon',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Idaho',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Pennsylvania',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Kansas',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'RhodeIsland',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Maine',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'South Dakota',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Massachusetts',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Texas',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Minnesota',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Vermont',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Montana',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Virginia',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Nevada',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Washington',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'NewHampshire',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Wisconsin',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'NewJersey',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Wyoming',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'NewMexico',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Alaska',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'NewYork',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Colorado',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Oklahoma',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Connecticut',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Oregon',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Georgia',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'RhodeIsland',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Hawaii',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'SouthDakota',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Massachusetts',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Utah',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Montana',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Vermont',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New Hampshire',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Virginia',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'New Mexico',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Washington',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Oklahoma',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
             {
-              name: 'Wyoming',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Utah',
+              itemStyle: {areaColor: '#C4E1FF' }
             },
 
-          ]
-        },
-        series: [
+            {
+              name:'Arizona',
+              itemStyle: {areaColor: '#D2E9FF' }
+            },
+
+          ]},series: [
 
           {
             name: 'bar3D',
@@ -2291,11 +1986,7 @@ $.get('USA.json', function(usaJson) {
                 value: 734.69
 
               },
-            ])
-          },
-        ]
-      }, {
-        geo3D: {
+            ])},]},{geo3D: {
           map: 'USA',
           roam: true,
           itemStyle: {
@@ -2338,361 +2029,259 @@ $.get('USA.json', function(usaJson) {
               intensity: 0.3
             }
           },
-          regions: [
+          regions:[
 
             {
-              name: 'Alabama',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Mississippi',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Alaska',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Alabama',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Arkansas',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Arkansas',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Georgia',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'West Virginia',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Illinois',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Florida',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Indiana',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Georgia',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Iowa',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Illinois',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Kentucky',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Indiana',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Louisiana',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Iowa',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Michigan',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Kentucky',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Mississippi',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Louisiana',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Missouri',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Maine',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Nebraska',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Michigan',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'NorthCarolina',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Missouri',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'NorthDakota',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Nevada',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Ohio',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'North Dakota',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Oklahoma',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Ohio',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Pennsylvania',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'South Carolina',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'SouthCarolina',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Tennessee',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Tennessee',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Texas',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Texas',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Alaska',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'WestVirginia',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'California',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'California',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Delaware',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Connecticut',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Idaho',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Delaware',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Kansas',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Florida',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Maryland',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Hawaii',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Nebraska',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Idaho',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'New Jersey',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Kansas',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'New Mexico',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Maine',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'North Carolina',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Maryland',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Oklahoma',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Massachusetts',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Oregon',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Minnesota',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Pennsylvania',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Montana',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'South Dakota',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Nevada',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Virginia',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'NewHampshire',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Washington',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'NewJersey',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Wisconsin',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'NewMexico',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Colorado',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'NewYork',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Connecticut',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Oregon',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Hawaii',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'RhodeIsland',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Massachusetts',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'SouthDakota',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Minnesota',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Utah',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Montana',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Vermont',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'New Hampshire',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Virginia',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'New York',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Washington',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'RhodeIsland',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Wisconsin',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Utah',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Wyoming',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Vermont',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Arizona',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Wyoming',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
             {
-              name: 'Colorado',
-              itemStyle: {
-                areaColor: '#afdfe4'
-              }
+              name:'Arizona',
+              itemStyle: {areaColor: '#D2E9FF' }
             },
 
-          ]
-        },
-        series: [
+          ]},series: [
 
           {
             name: 'bar3D',
@@ -2956,11 +2545,7 @@ $.get('USA.json', function(usaJson) {
                 value: 1079.19
 
               },
-            ])
-          },
-        ]
-      }, {
-        geo3D: {
+            ])},]},{geo3D: {
           map: 'USA',
           roam: true,
           itemStyle: {
@@ -3003,361 +2588,259 @@ $.get('USA.json', function(usaJson) {
               intensity: 0.3
             }
           },
-          regions: [
+          regions:[
 
             {
-              name: 'Alabama',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Alabama',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Arkansas',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Mississippi',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Georgia',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'West Virginia',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Indiana',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Arkansas',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Kentucky',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Kentucky',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Louisiana',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Louisiana',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Michigan',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'South Carolina',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Mississippi',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Tennessee',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Missouri',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Delaware',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Oklahoma',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Georgia',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'SouthCarolina',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Indiana',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Tennessee',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Michigan',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Texas',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Missouri',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'WestVirginia',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'North Carolina',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Alaska',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Ohio',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Arizona',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Oklahoma',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'California',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Pennsylvania',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Delaware',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Texas',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Florida',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Alaska',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Idaho',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'California',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Illinois',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Florida',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Iowa',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Idaho',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Kansas',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Illinois',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Maine',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Iowa',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Maryland',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Kansas',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Minnesota',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Maine',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Nebraska',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Maryland',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Nevada',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Minnesota',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'NewHampshire',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Nebraska',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'NewJersey',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Nevada',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'NewMexico',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'New Jersey',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'NewYork',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'New York',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'NorthCarolina',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'North Dakota',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'NorthDakota',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Oregon',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Ohio',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'RhodeIsland',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Oregon',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'South Dakota',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Pennsylvania',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Virginia',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'SouthDakota',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Washington',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Utah',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Wisconsin',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Virginia',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Arizona',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Washington',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Connecticut',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Wisconsin',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Hawaii',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Wyoming',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Massachusetts',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Colorado',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Montana',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Connecticut',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'New Hampshire',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Hawaii',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'New Mexico',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Massachusetts',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Utah',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Montana',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Vermont',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'RhodeIsland',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Wyoming',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Vermont',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Colorado',
+              itemStyle: {areaColor: '#ACD6FF' }
             },
 
-          ]
-        },
-        series: [
+          ]},series: [
 
           {
             name: 'bar3D',
@@ -3621,11 +3104,7 @@ $.get('USA.json', function(usaJson) {
                 value: 1126.59
 
               },
-            ])
-          },
-        ]
-      }, {
-        geo3D: {
+            ])},]},{geo3D: {
           map: 'USA',
           roam: true,
           itemStyle: {
@@ -3668,361 +3147,259 @@ $.get('USA.json', function(usaJson) {
               intensity: 0.3
             }
           },
-          regions: [
+          regions:[
 
             {
-              name: 'Alabama',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'Alabama',
+              itemStyle: {areaColor: '#0072E3' }
             },
 
             {
-              name: 'Mississippi',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'Mississippi',
+              itemStyle: {areaColor: '#0072E3' }
             },
 
             {
-              name: 'WestVirginia',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'Kentucky',
+              itemStyle: {areaColor: '#0080FF' }
             },
 
             {
-              name: 'Alaska',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Louisiana',
+              itemStyle: {areaColor: '#0080FF' }
             },
 
             {
-              name: 'Arizona',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'South Carolina',
+              itemStyle: {areaColor: '#0080FF' }
             },
 
             {
-              name: 'Arkansas',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Tennessee',
+              itemStyle: {areaColor: '#0080FF' }
             },
 
             {
-              name: 'Delaware',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'West Virginia',
+              itemStyle: {areaColor: '#0080FF' }
             },
 
             {
-              name: 'Florida',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Arkansas',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Georgia',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Delaware',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Idaho',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Indiana',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Illinois',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Michigan',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Indiana',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Missouri',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Iowa',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Ohio',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Kansas',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Oklahoma',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Kentucky',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Florida',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Louisiana',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Georgia',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Maine',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Illinois',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Maryland',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Iowa',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Michigan',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Kansas',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Minnesota',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Maine',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Missouri',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Maryland',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Nebraska',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'New York',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'NewHampshire',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'North Carolina',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'NewMexico',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Pennsylvania',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'NorthCarolina',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Texas',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'NorthDakota',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Wisconsin',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Ohio',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Alaska',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Oklahoma',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Arizona',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Oregon',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'California',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Pennsylvania',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Hawaii',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'SouthCarolina',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Idaho',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'SouthDakota',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Massachusetts',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Tennessee',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Montana',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Texas',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Nebraska',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Virginia',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Nevada',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Washington',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'New Hampshire',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Wisconsin',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'New Jersey',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Wyoming',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'New Mexico',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'California',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'North Dakota',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Connecticut',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Oregon',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Hawaii',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'RhodeIsland',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Massachusetts',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'South Dakota',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Montana',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Vermont',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Nevada',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Virginia',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'NewJersey',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Washington',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'NewYork',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Wyoming',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'RhodeIsland',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Connecticut',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Utah',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Minnesota',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Vermont',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Colorado',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
             {
-              name: 'Colorado',
-              itemStyle: {
-                areaColor: '#90d7ec'
-              }
+              name:'Utah',
+              itemStyle: {areaColor: '#97CBFF' }
             },
 
-          ]
-        },
-        series: [
+          ]},series: [
 
           {
             name: 'bar3D',
@@ -4286,11 +3663,7 @@ $.get('USA.json', function(usaJson) {
                 value: 1039.25
 
               },
-            ])
-          },
-        ]
-      }, {
-        geo3D: {
+            ])},]},{geo3D: {
           map: 'USA',
           roam: true,
           itemStyle: {
@@ -4333,361 +3706,259 @@ $.get('USA.json', function(usaJson) {
               intensity: 0.3
             }
           },
-          regions: [
+          regions:[
 
             {
-              name: 'Alabama',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'Alabama',
+              itemStyle: {areaColor: '#0066CC' }
             },
 
             {
-              name: 'Arkansas',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'Louisiana',
+              itemStyle: {areaColor: '#0066CC' }
             },
 
             {
-              name: 'Kentucky',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'Mississippi',
+              itemStyle: {areaColor: '#0066CC' }
             },
 
             {
-              name: 'Louisiana',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'West Virginia',
+              itemStyle: {areaColor: '#0066CC' }
             },
 
             {
-              name: 'Mississippi',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'Arkansas',
+              itemStyle: {areaColor: '#0072E3' }
             },
 
             {
-              name: 'Oklahoma',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'Kentucky',
+              itemStyle: {areaColor: '#0072E3' }
             },
 
             {
-              name: 'Tennessee',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'Oklahoma',
+              itemStyle: {areaColor: '#0072E3' }
             },
 
             {
-              name: 'WestVirginia',
-              itemStyle: {
-                areaColor: '#228fbd'
-              }
+              name:'Tennessee',
+              itemStyle: {areaColor: '#0072E3' }
             },
 
             {
-              name: 'Alaska',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Georgia',
+              itemStyle: {areaColor: '#0080FF' }
             },
 
             {
-              name: 'Arizona',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Kansas',
+              itemStyle: {areaColor: '#0080FF' }
             },
 
             {
-              name: 'Delaware',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Missouri',
+              itemStyle: {areaColor: '#0080FF' }
             },
 
             {
-              name: 'Florida',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'North Carolina',
+              itemStyle: {areaColor: '#0080FF' }
             },
 
             {
-              name: 'Georgia',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'South Carolina',
+              itemStyle: {areaColor: '#0080FF' }
             },
 
             {
-              name: 'Idaho',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Delaware',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Illinois',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Florida',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Indiana',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Illinois',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Iowa',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Indiana',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Kansas',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Iowa',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Maine',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Maine',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Maryland',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Maryland',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Michigan',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Michigan',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Minnesota',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Nebraska',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Missouri',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'North Dakota',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Nebraska',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Ohio',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'Nevada',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Oregon',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'NewHampshire',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Pennsylvania',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'NewJersey',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'South Dakota',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'NewMexico',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Texas',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'NewYork',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Virginia',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'NorthCarolina',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Wisconsin',
+              itemStyle: {areaColor: '#2894FF' }
             },
 
             {
-              name: 'NorthDakota',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Alaska',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Ohio',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Arizona',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Oregon',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Connecticut',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Pennsylvania',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Idaho',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'RhodeIsland',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'New Hampshire',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'SouthCarolina',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'New Jersey',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'SouthDakota',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'New Mexico',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Texas',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'RhodeIsland',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Virginia',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Washington',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Washington',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Wyoming',
+              itemStyle: {areaColor: '#46A3FF' }
             },
 
             {
-              name: 'Wisconsin',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'California',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Wyoming',
-              itemStyle: {
-                areaColor: '#33a3dc'
-              }
+              name:'Hawaii',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'California',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Massachusetts',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Colorado',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Minnesota',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Connecticut',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Montana',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Hawaii',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Nevada',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Massachusetts',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'New York',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Montana',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Vermont',
+              itemStyle: {areaColor: '#66B3FF' }
             },
 
             {
-              name: 'Utah',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Colorado',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
             {
-              name: 'Vermont',
-              itemStyle: {
-                areaColor: '#7bbfea'
-              }
+              name:'Utah',
+              itemStyle: {areaColor: '#84C1FF' }
             },
 
-          ]
-        },
-        series: [
+          ]},series: [
 
           {
             name: 'bar3D',
@@ -4951,10 +4222,7 @@ $.get('USA.json', function(usaJson) {
                 value: 1008.58
 
               },
-            ])
-          },
-        ]
-      }, ]
+            ])},]}, ]
 
     };
 
